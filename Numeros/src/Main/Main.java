@@ -36,7 +36,7 @@ public class Main extends Application{
     @Override
     public void start(Stage stage) throws Exception {
         
-        Path path = new Path();
+        
         VBox general= new VBox();
         
             HBox botones=new HBox();
@@ -47,25 +47,26 @@ public class Main extends Application{
                         
                         
             botones.getChildren().add(boton4);
-           
+        Path path = new Path();   
         general.getChildren().addAll(botones, path);
         
         Group root= new Group(general);
         
         
         boton4.setOnAction((ActionEvent event) ->
-                { 
-                    double n =boton4.getHeight();
-                    Numero4 numero4=new Numero4(n, espacioNumero,espacioSuperior);
-                    root.getChildren().add(numero4.start(path));
-                    espacioNumero+=100;
-                    contador+=100;
-                    if(contador>300){
-                        espacioSuperior+=120;
-                        contador =0;
-                        espacioNumero=0;
-                    }
-                });
+        { 
+            double n =boton4.getHeight();
+            Numero4 numero4=new Numero4(n, espacioNumero,espacioSuperior);
+            root.getChildren().add(numero4.start(path));
+            //contador para el salto de linea en la pantalla
+            espacioNumero+=100;
+            contador+=100;
+            if(contador>300){
+                espacioSuperior+=120;
+                contador =0;
+                espacioNumero=0;
+            }
+        });
         Scene scene = new Scene(root, 700, 700);
         stage.setScene(scene);
         stage.show();
