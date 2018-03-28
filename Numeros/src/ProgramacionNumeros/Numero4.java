@@ -170,6 +170,7 @@ public class Numero4 {
         c1.setRadius(5.0);
         c1.setCache(true);
         c1.setStroke(Color.RED);
+        c1.setFill(Color.GREENYELLOW);
         c1.setStrokeWidth(3);
 
         Circle c2 = new Circle();
@@ -178,6 +179,7 @@ public class Numero4 {
         c2.setRadius(5.0);
         c2.setCache(true);
         c2.setStroke(Color.RED);
+        c2.setFill(Color.GREENYELLOW);
         c2.setStrokeWidth(3);
 
         Circle c3 = new Circle();
@@ -185,6 +187,7 @@ public class Numero4 {
         c3.setCenterY(line2.getY()+marco);
         c3.setRadius(5.0);
         c3.setStroke(Color.RED);
+        c3.setFill(Color.GREENYELLOW);
         c3.setStrokeWidth(3);
 
         Circle c4 = new Circle();
@@ -193,6 +196,7 @@ public class Numero4 {
         c4.setRadius(5.0);
         c4.setCache(true);
         c4.setStroke(Color.RED);
+        c4.setFill(Color.GREENYELLOW);
         c4.setStrokeWidth(3);
         
     Group root = new Group(path);
