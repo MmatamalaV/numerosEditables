@@ -109,7 +109,7 @@ public class Numero0 {
     
     
     
-    circle.setVisible(false);
+    circle.setVisible(true);
     
     //se toma la posicion del circulo al cl1ckearlo
     c1.setOnMousePressed(pressMouse(c1));

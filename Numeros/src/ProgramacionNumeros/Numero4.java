@@ -20,7 +20,7 @@ import javafx.scene.shape.Path;
  * @author mario
  */
 public class Numero4 {
-     double m_nX = 0;
+    double m_nX = 0;
     double m_nY = 0;
     double m_nMouseX = 0;
     double m_nMouseY = 0;
@@ -199,9 +199,11 @@ public class Numero4 {
         c4.setFill(Color.GREENYELLOW);
         c4.setStrokeWidth(3);
         
-    Group root = new Group(path);
+    Group root = new Group();
+    root.getChildren().addAll(path,circle); 
     circle.getChildren().addAll(c1,c2,c3,c4);
-    root.getChildren().addAll(circle);
+    
+   
     
     circle.setVisible(true);
     

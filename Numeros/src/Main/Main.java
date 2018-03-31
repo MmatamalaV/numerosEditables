@@ -5,6 +5,7 @@ import ProgramacionNumeros.Numero0;
 import ProgramacionNumeros.Numero4;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
+import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -27,6 +28,7 @@ public class Main extends Application{
     double espacioNumero=0;
     double espacioSuperior=0;
     int contador=0;
+    Path path = new Path();  
     /**
      * @param args the command line arguments
      */
@@ -41,18 +43,60 @@ public class Main extends Application{
         VBox general= new VBox();
         
             HBox botones=new HBox();
+            botones.setAlignment(Pos.CENTER);
                 Button boton0 = new Button("0");
-                boton0.setMinWidth(100);
-                boton0.setMaxWidth(100);
-                 
+                boton0.setMinWidth(50);
+                boton0.setMaxWidth(50);
+                boton0.setDisable(false);
+                
+                Button boton1 = new Button("1");
+                boton1.setMinWidth(50);
+                boton1.setMaxWidth(50);
+                boton1.setDisable(true);
+                
+                Button boton2 = new Button("2");
+                boton2.setMinWidth(50);
+                boton2.setMaxWidth(50);
+                boton2.setDisable(true);
+                
+                Button boton3 = new Button("3");
+                boton3.setMinWidth(50);
+                boton3.setMaxWidth(50);
+                boton3.setDisable(true);
+                
                 Button boton4 = new Button("4");
-                boton4.setMinWidth(100);
-                boton4.setMaxWidth(100);
+                boton4.setMinWidth(50);
+                boton4.setMaxWidth(50);
+                
+                Button boton5 = new Button("5");
+                boton5.setMinWidth(50);
+                boton5.setMaxWidth(50);
+                boton5.setDisable(true);
+               
+                Button boton6 = new Button("6");
+                boton6.setMinWidth(50);
+                boton6.setMaxWidth(50);
+                boton6.setDisable(true);
+                
+                Button boton7 = new Button("7");
+                boton7.setMinWidth(50);
+                boton7.setMaxWidth(50);
+                boton7.setDisable(true);
+                
+                Button boton8 = new Button("8");
+                boton8.setMinWidth(50);
+                boton8.setMaxWidth(50);
+                boton8.setDisable(true);
+                
+                Button boton9 = new Button("9");
+                boton9.setMinWidth(50);
+                boton9.setMaxWidth(50);
+                boton9.setDisable(true);
                  
                         
                         
-            botones.getChildren().addAll(boton0,boton4);
-        Path path = new Path();   
+            botones.getChildren().addAll(boton0,boton1,boton2,boton3,boton4,boton5,boton6,boton7,boton8,boton9);
+         
         general.getChildren().addAll(botones, path);
         
         Group root= new Group(general);
