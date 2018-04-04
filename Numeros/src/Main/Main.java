@@ -2,6 +2,7 @@ package Main;
 
 
 import ProgramacionNumeros.Numero0;
+import ProgramacionNumeros.Numero1;
 import ProgramacionNumeros.Numero4;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -52,7 +53,7 @@ public class Main extends Application{
                 Button boton1 = new Button("1");
                 boton1.setMinWidth(50);
                 boton1.setMaxWidth(50);
-                boton1.setDisable(true);
+                boton1.setDisable(false);
                 
                 Button boton2 = new Button("2");
                 boton2.setMinWidth(50);
@@ -107,6 +108,21 @@ public class Main extends Application{
             double n =boton0.getHeight();
             Numero0 numero0=new Numero0(n, espacioNumero,espacioSuperior);
             root.getChildren().add(numero0.start(path));
+            //contador para el salto de linea en la pantalla
+            espacioNumero+=100;
+            contador+=100;
+            if(contador>300){
+                espacioSuperior+=120;
+                contador =0;
+                espacioNumero=0;
+            }
+        });
+        
+        boton1.setOnAction((ActionEvent event) ->
+        { 
+            double n =boton1.getHeight();
+            Numero1 numero1=new Numero1(n, espacioNumero,espacioSuperior);
+            root.getChildren().add(numero1.start(path));
             //contador para el salto de linea en la pantalla
             espacioNumero+=100;
             contador+=100;

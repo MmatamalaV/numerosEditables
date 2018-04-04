@@ -20,7 +20,7 @@ import javafx.scene.shape.Path;
  * @author mario
  */
 public class Numero4 {
-    double m_nX = 0;
+     double m_nX = 0;
     double m_nY = 0;
     double m_nMouseX = 0;
     double m_nMouseY = 0;
